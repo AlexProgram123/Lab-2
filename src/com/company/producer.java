@@ -9,15 +9,11 @@ class producer implements Runnable {
 
     public producer(BlockingQueue<Integer> obj)
     {
-        // accept an ArrayBlockingQueue object from
-        // constructor
         this.obj = obj;
     }
 
     @Override public void run()
     {
-        // Produce numbers in the range [1,4]
-        // and put them in the buffer
         for (int i = 1; i >= 1; i++) {
             try {
                 obj.put(i);
