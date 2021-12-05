@@ -5,7 +5,7 @@ import java.util.concurrent.BlockingQueue;
 class producer implements Runnable {
 
     BlockingQueue<Integer> obj;
-    int count =10;
+    int count =0;
 
     public producer(BlockingQueue<Integer> obj)
     {
